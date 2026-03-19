@@ -108,37 +108,77 @@ This weighting gives more importance to semantic understanding and structured ev
 ```
 ml_engineer.txt
   TF-IDF Score: 0.262
-  
   Embedding Score: 0.698
-  
   Skill Coverage Score: 0.833
-  
   LLM Score: 0.825
-  
   Final Score: 0.735
-  
   Final Score (out of 10): 7.35/10
-  
   Match Level: High Match
-  
   Required Skills: cloud, data pipelines, machine learning, model deployment, nlp, python
-  
   Missing Skills: model deployment
-  
   Strengths: data analysis, machine learning, nlp, python, statistical modeling
-  
   Summary: Good overall fit, but notable gaps remain in: model deployment.
 
 ```
-## Tech Stack
-- Python
-- scikit-learn
-- sentence-transformers
-- pandas
-- langdetect
-- Ollama
-- Mistral
 
+---
+
+## Tech stack
+
+- Python  
+- scikit-learn  
+- sentence-transformers  
+- pandas  
+- langdetect  
+- Ollama  
+- Mistral  
+
+---
+
+## How to run
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/ai-resume-job-matcher.git
+cd ai-resume-job-matcher
+```
+### 2. Create and activate a virtual environment
+```bash
+pip install -r requirements.txt
+```
+### 3. Install dependencies
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+### 4. Make sure Ollama is installed
+
+Install from: 
+```bash
+(https://ollama.com)
+```
+Then pull and run the model:
+```bash
+ollama run mistral
+```
+If needed, start the Ollama service:
+```bash
+ollama serve
+```
+### 5. Add your resume and job descriptions
+Put your resume ```bash .txt``` file inside:
+```bash
+data/resumes/
+```
+Put job descriptions as ```bash .txt``` files inside:
+```bash
+data/job_descriptions/
+```
+
+```bash
+
+```
 
 
 
