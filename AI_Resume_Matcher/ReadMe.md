@@ -4,7 +4,7 @@
 A hybrid NLP project that matches a resume to job descriptions using a combination of classical text similarity, semantic embeddings, skill coverage analysis, and local LLM-based evaluation.
 
 The goal of this project is to go beyond simple keyword matching and build a more realistic resume-job fit system that can handle both English and Italian job descriptions.
-
+ 
 ---
  
 ## Why I built this
