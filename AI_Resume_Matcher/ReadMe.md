@@ -86,3 +86,29 @@ ai_resume_job_matcher/
 ├── main.py
 ├── requirements.txt
 └── README.md
+```
+## How the scoring works?
+
+The final score combines multiple signals:
+- TF-IDF score: lexical similarity between resume and job description
+- Embedding score: semantic similarity using sentence transformers
+- Skill coverage score: proportion of required skills covered by the resume
+- LLM score: structured evaluation from a local LLM
+
+## Final score formula
+Final Score =
+0.10 × TF-IDF
++ 0.30 × Embedding Similarity
++ 0.25 × Skill Coverage
++ 0.35 × LLM Score
+This weighting gives more importance to semantic understanding and structured evaluation, while still preserving interpretable classical signals.
+
+
+
+
+
+
+
+
+
+
