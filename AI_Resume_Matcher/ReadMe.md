@@ -187,4 +187,71 @@ The ranked output will be shown in the terminal and saved to:
 results/match_results.csv
 ```
 
+## Why I used a TXT resume instead of PDF
+
+PDF resumes are great for human readers, but text extraction from PDFs often introduces noise such as:
+
+- broken words
+- strange Unicode characters
+- bad line reconstruction
+
+Since this project depends on text matching, a clean ```bash .txt``` version of the resume gives much more reliable results.
+The PDF can still be used for actual applications, while the ```bash .txt``` version is better for the matching pipeline.
+
+## Limitations
+
+This is still a prototype, not a production ATS system.
+
+Current limitations include:
+
+skill extraction is not perfect
+
+- semantic skill matching is still approximate
+- translation quality depends on the local LLM
+- scoring weights are hand-tuned
+- resume parsing currently works best with plain text input
+- no web UI yet
+
+## Possible improvements
+
+Some natural next steps for this project are:
+
+- add PDF resume parsing with cleanup
+- cache translations so the same JD is not retranslated every run
+- cache extracted required skills
+- add a Streamlit interface
+- support multiple resumes
+- add section-aware scoring
+- improve semantic skill matching
+- add multilingual embedding models
+- export detailed reports
+
+## What I learned
+
+This project was a good exercise in combining classical NLP with modern embedding-based and LLM-based methods.
+
+A few things became very clear while building it:
+
+- exact keyword matching alone is not enough
+- multilingual handling matters in real applications
+- local LLMs are useful, but need guardrails
+- structured reasoning is only reliable when combined with deterministic checks
+- good scoring systems need calibration, not just more models
+
+## Author
+
+### Rohaan Deb
+
+If you found this project interesting, feel free to connect with me on LinkedIn.
+
+
+
+
+
+
+
+
+
+
+
 
