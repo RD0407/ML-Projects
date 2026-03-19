@@ -105,6 +105,7 @@ Final Score =
 This weighting gives more importance to semantic understanding and structured evaluation, while still preserving interpretable classical signals.
 
 ## Example Output
+```
 ml_engineer.txt
   TF-IDF Score: 0.262
   
@@ -128,8 +129,15 @@ ml_engineer.txt
   
   Summary: Good overall fit, but notable gaps remain in: model deployment.
 
-
-
+```
+## Tech Stack
+- Python
+- scikit-learn
+- sentence-transformers
+- pandas
+- langdetect
+- Ollama
+- Mistral
 
 
 
