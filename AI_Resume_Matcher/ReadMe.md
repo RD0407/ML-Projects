@@ -107,15 +107,25 @@ This weighting gives more importance to semantic understanding and structured ev
 ## Example Output
 ml_engineer.txt
   TF-IDF Score: 0.262
+  
   Embedding Score: 0.698
+  
   Skill Coverage Score: 0.833
+  
   LLM Score: 0.825
+  
   Final Score: 0.735
+  
   Final Score (out of 10): 7.35/10
+  
   Match Level: High Match
+  
   Required Skills: cloud, data pipelines, machine learning, model deployment, nlp, python
+  
   Missing Skills: model deployment
+  
   Strengths: data analysis, machine learning, nlp, python, statistical modeling
+  
   Summary: Good overall fit, but notable gaps remain in: model deployment.
 
 
