@@ -175,12 +175,16 @@ Put job descriptions as ```bash .txt``` files inside:
 ```bash
 data/job_descriptions/
 ```
+### 6. Run the Matcher
+```bash
+python main.py
+```
+### 7. Check results
+
+The ranked output will be shown in the terminal and saved to:
 
 ```bash
-
+results/match_results.csv
 ```
-
-
-
 
 
