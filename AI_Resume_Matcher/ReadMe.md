@@ -6,7 +6,7 @@ A hybrid NLP project that matches a resume to job descriptions using a combinati
 The goal of this project is to go beyond simple keyword matching and build a more realistic resume-job fit system that can handle both English and Italian job descriptions.
 
 ---
-
+ 
 ## Why I built this
 
 Many job applications are filtered by systems that rely heavily on keywords, even when a candidate is actually a strong fit. This becomes even more difficult in multilingual settings, especially when a resume is written in English and the job description is written in Italian.
